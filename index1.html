@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html lang="en" dir="ltr" >
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="text-center bg-gray-800 grid grid-cols-1 gap-1">
+
+  <form action="switch.php" method="POST" class="bg-blue-200 p-3 m-3 text-1xl rounded-2xl">
+    <h1 class="text-center text-blue-600 text-2xl pt-2 mx-1">Electric Bill Calculator</h1>
+    Old Reading:
+    <input type="number" name="OldReading" step="0.0001" required class="p-1 m-1">
+    <br>
+    New Reading:
+    <input type="number" name="NewReading" step="0.0001" required class="p-1 m-1">
+    <br>
+    Number of days:
+    <input type="number" name="Dayscount" step="0.0001" required class="p-1 m-1">
+    <br>
+    Kilowatt-hour Multiplier
+    <input type="number" name="kwhpesos" step="0.001" required class="p-1 m-1">
+    <br>
+    <input type="submit" name="Calculate" value="Calculate"
+    class="px-3 py-1 m-1 bg-blue-800 rounded-3xl text-white , hover:bg-blue-600 text-gray-200">
+    <input type="reset" value="Reset Form" class="px-3 py-1 m-1 bg-red-600 rounded-3xl text-white , hover:bg-red-600 text-gray-200">
+  </form>
+</body>
+
+<footer>
+</footer>
