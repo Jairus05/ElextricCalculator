@@ -5,7 +5,7 @@
 
 <body>
   <?php
-include "index.html";
+include "index1.html";
 if (isset($_POST["Calculate"])){
     $Dayscount = $_POST["Dayscount"];
     $OldReading = $_POST["OldReading"];
